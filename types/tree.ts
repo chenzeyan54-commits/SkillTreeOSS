@@ -22,12 +22,14 @@ export interface TreeNode {
   resources: Resource[]
   position?: { x: number; y: number }  // omit in JSON; Dagre computes layout automatically. Reserved for future roadmap creator.
   requires: string[]
+  ariaLabel?: string
 }
 
 export interface TreeEdge {
   id: string
   source: string
   target: string
+  ariaLabel?: string
 }
 
 export interface SkillTree {
